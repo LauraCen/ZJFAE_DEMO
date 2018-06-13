@@ -1,0 +1,4 @@
+2018-05-31 15:39:28 INFO main [utils.Util]loginTest(line:61)http://10.18.13.144:21041/ssm/pbpwl.do?gcmd=OINSSM&fh=VOINSSM000000J00&bd=%7B%22credential%22%3A%22646668095%40qq.com%22%2C%22password%22%3A%22ZDIzYjRhMDVmZTg0YzY0YTliY2IwNjFkYzVjODkzMGM%22%7D
+2018-05-31 15:39:29 INFO main [utils.Util]loginTest(line:61)http://10.18.13.144:21041/ssm/pbpwl.do?gcmd=OINSSM&fh=VOINSSM000000J00&bd=%7B%22credential%22%3A%22%22%2C%22password%22%3A%22%22%7D
+2018-05-31 15:39:29 INFO main [utils.Util]loginTest(line:61)http://10.18.13.144:21041/ssm/pbpwl.do?gcmd=OINSSM&fh=VOINSSM000000J00&bd=%7B%22credential%22%3A%2213081916355%22%2C%22password%22%3A%22ZDIzYjRhMDVmZTg0YzY0YTliY2IwNjFkYzVjODkzMGM%22%7D
+2018-05-31 15:39:29 INFO main [utils.Util]loginTest(line:61)http://10.18.13.144:21041/ssm/pbpwl.do?gcmd=OINSSM&fh=VOINSSM000000J00&bd=%7B%22credential%22%3A%2213685789620%22%2C%22password%22%3A%22shenzjk%22%7D

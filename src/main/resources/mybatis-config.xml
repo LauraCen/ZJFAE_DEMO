@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>	
+<environments default="test106">
+		<environment id="test104">
+			<transactionManager type="MANAGED"/>
+			<dataSource type="POOLED">
+				<property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
+				<property name="url" value="jdbc:oracle:thin:@10.18.13.17:1521:zjsdb"/>
+                <property name="username" value="etest"/>
+                <property name="password" value="etest"/>
+                <property name="poolMaximumActiveConnections" value="10"/>
+                <property name="poolMaximumIdleConnections" value="5"/>
+                <property name="poolPingQuery" value="SELECT 1 FROM DUAL"/>
+                <property name="poolPingEnabled" value="true"/>
+    			<property name="poolPingConnectionsNotUsedFor" value="60000"/>
+			</dataSource>
+		</environment>
+		<environment id="test106">
+			<transactionManager type="MANAGED"/>
+			<dataSource type="POOLED">
+				<property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
+				<property name="url" value="jdbc:oracle:thin:@10.18.13.34:1521:zjsdb"/>
+                <property name="username" value="zjsdev"/>
+                <property name="password" value="zjsdev2"/>
+                <property name="poolMaximumActiveConnections" value="10"/>
+                <property name="poolMaximumIdleConnections" value="5"/>
+                <property name="poolPingQuery" value="SELECT 1 FROM DUAL"/>
+                <property name="poolPingEnabled" value="true"/>
+    			<property name="poolPingConnectionsNotUsedFor" value="60000"/>
+			</dataSource>
+		</environment>	
+	</environments>
+
+	<mappers>
+		<mapper resource="UsersMapper.xml"/>	
+	</mappers>
+</configuration>

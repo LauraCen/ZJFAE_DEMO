@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace ="src.main.resources.UsersMapper">
+
+	
+	<select id="getUserStatusByMobile" resultType="java.lang.String" >
+		select status from TC_USERS where 
+		 mobile= #{mobile}
+		 </select>
+	
+	<resultMap type = "mybatis.Users" id = "userDetailsResult">
+		<id property ="id" column = "ID"/>
+		<result  property ="mobile" column = "MOBILE"/>
+		<result property ="account" column = "ACCOUNT"/>
+		<result property ="type" column = "TYPE"/>
+		<result property ="name" column = "NAME"/>
+		<result property ="password" column = "PASSWORD"/>
+		<result property ="status" column = "STATUS"/>
+		<result property ="recAccount" column = "RECOMAND_ACCOUNT"/>
+	</resultMap>
+	
+	<select id="getUserDetailInfoByMobile" resultMap="userDetailsResult">
+		select id,mobile,account,type,name,password,status,RECOMAND_ACCOUNT from TC_USERS where
+		<!--  if test="_parameter != null"-->
+		 mobile= #{mobile}
+		 <!-- /if-->
+	</select>
+
+</mapper>

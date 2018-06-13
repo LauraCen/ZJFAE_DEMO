@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ZJFAE Test Suite">
+  <listeners>
+    <listener class-name="utils.ExtentTestNGIReporterListener"></listener>
+  </listeners>
+  <test thread-count="5" name="ZJFAE API Auto-Test">
+ 	<groups>
+    	<run>
+    		<include name = "functest"></include>
+    		<include name = "checkintest"></include>
+    		
+    	</run>
+    </groups>
+    <classes>
+      <class name="testcase.Epie">
+      	<methods>
+      		<include name = "loginTest"></include>
+      		<include name = "registerTest"></include>
+      	</methods>
+      	</class>
+      <class name="com.zjfae.demo.ZjfaeApplicationTests"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
